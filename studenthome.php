@@ -1,60 +1,3 @@
-<?php 
-session_start();
-include 'connect.php'; 
-$uname = $_POST['user'];
-$pass = $_POST['userpassword'];
-
-//echo $uname;
-//echo $pass;
-
-echo $uname;
-echo $pass;
-
-
-//include('connect.php');
-
-$query = "select * FROM user WHERE user='$uname' and pass='$pass'";
-echo $query;
-$result = mysql_query($query) or die(mysql_error());
-//echo $result;
-
-$count = mysql_num_rows($result);
-//echo $query;
-echo $count;
-
-		if($uname == student)
-		
-		{
-		
-header('Location: studenthome.php');    
-exit();
-
-}
-
-elseif ($uname == staff)
-
-{
-
-header('Location: staffhome.php');    
-exit();
-
-}
-
-
-
-else
-
-{
-
-echo "<p>Your password or username is incorrect, click <a href='login.php'>here</a> to try again.</p>";
-
-}
-
-
-
-?>
-
-
 <!DOCTYPE html>
 <!--[if IE 7 ]>    <html class="ie7 oldie"> <![endif]-->
 <!--[if IE 8 ]>    <html class="ie8 oldie"> <![endif]-->
@@ -100,11 +43,6 @@ echo "<p>Your password or username is incorrect, click <a href='login.php'>here<
             <h3>Welcome To Queens University Belfast Virtual Learning Environment</h3>
         </hgroup>
 
-
-	
-
-
-
         <nav>
             <ul>
                 <li><a href="#main">Home</a></li>
@@ -138,14 +76,9 @@ echo "<p>Your password or username is incorrect, click <a href='login.php'>here<
       <!-- portfolio -->
       <section id="portfolio">
 
-
+            <h1>QOL Student Homepage</h1>
             
-     		<?php 
-		
-echo $query;
-		
-		
-		?>
+	        
 
 
       <!-- about us -->
