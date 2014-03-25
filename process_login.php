@@ -7,50 +7,19 @@ $pass = $_POST['userpassword'];
 //echo $uname;
 //echo $pass;
 
-echo $uname;
-echo $pass;
-
+//echo $uname;
+//echo $pass;
 
 //include('connect.php');
 
 $query = "select * FROM user WHERE user='$uname' and pass='$pass'";
-echo $query;
+//echo $query;
 $result = mysql_query($query) or die(mysql_error());
 //echo $result;
 
 $count = mysql_num_rows($result);
 //echo $query;
-echo $count;
-
-		if($uname == student)
-		
-		{
-		
-header('Location: studenthome.php');    
-exit();
-
-}
-
-elseif ($uname == staff)
-
-{
-
-header('Location: staffhome.php');    
-exit();
-
-}
-
-
-
-else
-
-{
-
-echo "<p>Your password or username is incorrect, click <a href='login.php'>here</a> to try again.</p>";
-
-}
-
-
+//echo $count;
 
 ?>
 
@@ -142,8 +111,35 @@ echo "<p>Your password or username is incorrect, click <a href='login.php'>here<
             
      		<?php 
 		
-echo $query;
 		
+		if($count > 0)
+{
+
+if ($uname == 'staff')
+
+{
+
+ header('Location: staffhome.php');
+
+}
+
+elseif ($uname == 'student')
+
+{
+
+
+ header('Location: studenthome.php');
+}
+
+elseif ($uname != 'staff' || $uname != 'student')
+
+{
+
+echo "<p>Your password or username is incorrect, click <a href='login.php'>here</a> to try again.</p>";
+
+}
+
+		}
 		
 		?>
 
@@ -155,7 +151,7 @@ echo $query;
       <!-- contact -->
       
 
-
+<p>Your password or username is incorrect, click <a href='login.php'>here</a> to try again.</p>
 
 <!-- footer -->
 <footer>
