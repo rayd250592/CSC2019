@@ -76,12 +76,28 @@
       <!-- portfolio -->
       <section id="portfolio">
 
-            <h1>QOL Staff Homepage</h1>
+            <h1>Create Quiz</h1>
+           <form action="staffcreatequiz.php">
             
-                        
-        <form action="staffcreatequiz.php">
-    <input type="submit" value="Create Quiz">
-		</form>
+            Select Module: <select name="Modules" style="width: 130px">
+				<option selected>Select a Module</option>
+				<option>CSC2001</option>
+				<option>CSC2002</option>
+				<option>CSC2003</option>
+				<option>CSC2004</option>
+			</select>
+            
+            <br>
+            <br>
+         
+            Enter Number of Questions in Test: <input name="Questions" type="text" />
+
+            
+            
+            </form>
+            
+
+       
 
       <!-- about us -->
       
@@ -107,7 +123,8 @@
         <p class="footer-text">Copyright 2014 Queens University Belfast. &nbsp;&nbsp;&nbsp; Template from <a href="http://www.styleshout.com/">Styleshout</a></p>
     </div>
 
-</footer>
+	</footer>
 
 </body>
 </html>
+	

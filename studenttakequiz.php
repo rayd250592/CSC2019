@@ -78,10 +78,10 @@
 
             <h1>QOL Staff Homepage</h1>
             
-                        
-        <form action="staffcreatequiz.php">
-    <input type="submit" value="Create Quiz">
-		</form>
+            
+            <INPUT TYPE="submit" VALUE="Create Quiz">
+            
+       
 
       <!-- about us -->
       
