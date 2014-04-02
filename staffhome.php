@@ -46,12 +46,10 @@
         <nav>
             <ul>
                 <li><a href="#main">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Our Works</a></li>
-                <li><a href="#about-us">About Us</a></li>
-                <li><a href="#styles">Styles</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-            </ul>
+                <li><a href="#portfolio">Change Password</a></li>
+                <li><a href="#services">Logout</a></li>
+                
+              </ul>
         </nav>
 
     </header>
@@ -78,11 +76,57 @@
 
             <h1>QOL Staff Homepage</h1>
             
-                        
-        <form action="staffcreatequiz.php">
-    <input type="submit" value="Create Quiz">
-		</form>
+              <ul class="folio-list clearfix">
 
+                <li class="folio-thumb">
+                    <div class="thumb">
+                        <a class="lightbox" href="images/thumbs/timetable.jpg" title="Timetable" ><img src="images/images/timetable.jpg" alt="" /> </a>
+                    </div>
+                    <h3 class="entry-title">Time Table</h3>
+                </li>
+
+                <li class="folio-thumb last">
+                    <div class="thumb">
+                        <a class="lightbox" href="images/images/libary.jpg" title="Library"><img src="images/images/libary.jpg" alt="" /> </a>
+                    </div>
+                    <h3 class="entry-title">Library</h3>
+                </li>
+
+      <li class="folio-thumb last">
+                    <div class="thumb">
+                        <a class="lightbox" href="images/images/outlook.jpg" title="Library"><img src="images/images/outlook.jpg" alt="" /> </a>
+                    </div>
+                    <h3 class="entry-title">Email</h3>
+                </li>
+
+               
+                <li class="folio-thumb">
+                    <div class="thumb">
+                        <a class="lightbox" href="images/images/moduals.jpg" title="Modules" ><img src="images/images/moduals.jpg" alt="" /> </a>
+                    </div>
+                    <h3 class="entry-title">Modules</h3>
+                </li>
+                
+                 <li class="folio-thumb">
+                    <div class="thumb">
+                        <a class="lightbox" href="images/images/chip_pin_logo.jpg" title="Smart Card" ><img src="images/images/chip_pin_logo.jpg" alt="" /> </a>
+                    </div>
+                    <h3 class="entry-title">Smart Card</h3>
+                </li>
+
+
+ <li class="folio-thumb">
+                    <div class="thumb">
+                        <a class="lightbox" href="images/images/qsis.jpg" title="Qsis" ><img src="images/images/qsis.jpg" alt="" /> </a>
+                    </div>
+                    <h3 class="entry-title">Qsis</h3>
+                </li>
+
+
+             
+            </ul>
+
+       
       <!-- about us -->
       
       <!-- Styles -->
@@ -96,10 +140,12 @@
 <footer>
     <div class="footer-content">
         <ul class="footer-menu">
-            <li><a href="#main">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#about-us">About</a></li>
+         
+
+            <li><a href="#services">Email Us</a></li>
+            <li><a href="#portfolio">Contacts</a></li>
+            <li><a href="#about-us">Legal</a></li>
+            <li><a href="#about-us">Accessibility</a></li>
             <li><a href="http://www.qub.ac.uk">www.qub.ac.uk</a></li>
             <!-- <li class="rss-feed"><a href="#">RSS Feed</a></li> -->
         </ul>
