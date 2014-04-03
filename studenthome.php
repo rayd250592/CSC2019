@@ -78,72 +78,57 @@
 
             <h1>QOL Student Homepage</h1>
             
-                        <ul class="folio-list clearfix">
+                
+              <ul class="folio-list clearfix">
 
                 <li class="folio-thumb">
                     <div class="thumb">
-                        <a class="lightbox" href="images/thumbs/big/milk.jpg" title="Milk Splashes" ><img src="images/thumbs/milk.jpg" alt="" /> </a>
+                        <a class="lightbox" href="images/thumbs/timetable.jpg" title="Timetable" ><img src="images/images/timetable.jpg" alt="" /> </a>
                     </div>
-                    <h3 class="entry-title">Milk Splashes</h3>
+                    <h3 class="entry-title">Time Table</h3>
                 </li>
 
                 <li class="folio-thumb last">
                     <div class="thumb">
-                        <a class="lightbox" href="images/thumbs/big/hexagon.jpg" title="Hexagon Bokeh"><img src="images/thumbs/hexagon.jpg" alt="" /> </a>
+                        <a class="lightbox" href="images/images/libary.jpg" title="Library"><img src="images/images/libary.jpg" alt="" /> </a>
                     </div>
-                    <h3 class="entry-title">Hexagon Bokeh</h3>
+                    <h3 class="entry-title">Library</h3>
                 </li>
 
+      <li class="folio-thumb last">
+                    <div class="thumb">
+                        <a class="lightbox" href="images/images/outlook.jpg" title="Library"><img src="images/images/outlook.jpg" alt="" /> </a>
+                    </div>
+                    <h3 class="entry-title">Email</h3>
+                </li>
+
+               
                 <li class="folio-thumb">
                     <div class="thumb">
-                        <a class="lightbox-video" href="http://www.youtube.com/watch?v=EPXwP8D5C5c&feature=player_embedded"><img src="images/thumbs/hillsong-united-aftermath.jpg" alt="" /></a>
+                        <a class="lightbox" href="images/images/moduals.jpg" title="Modules" ><img src="images/images/moduals.jpg" alt="" /> </a>
                     </div>
-                    <h3 class="entry-title">Aftermath (Sample Video)</h3>
+                    <h3 class="entry-title">Modules</h3>
                 </li>
-                <li class="folio-thumb">
+                
+                 <li class="folio-thumb">
                     <div class="thumb">
-                        <a class="lightbox" href="images/thumbs/big/dandelion.jpg" title="Dandelion" ><img src="images/thumbs/dandelion.jpg" alt="" /> </a>
+                        <a class="lightbox" href="images/images/chip_pin_logo.jpg" title="Smart Card" ><img src="images/images/chip_pin_logo.jpg" alt="" /> </a>
                     </div>
-                    <h3 class="entry-title">Dandelion</h3>
+                    <h3 class="entry-title">Smart Card</h3>
                 </li>
 
-                <li class="folio-thumb">
+
+ <li class="folio-thumb">
                     <div class="thumb">
-                        <a class="lightbox" href="images/thumbs/big/eiffel.jpg" title="Eiffel Tower"><img src="images/thumbs/eiffel.jpg" alt="" /> </a>
+                        <a class="lightbox" href="images/images/qsis.jpg" title="Qsis" ><img src="images/images/qsis.jpg" alt="" /> </a>
                     </div>
-                    <h3 class="entry-title">Eiffel Tower</h3>
+                    <h3 class="entry-title">Qsis</h3>
                 </li>
 
-                 <li class="folio-thumb last">
-                    <div class="thumb">
-                        <a class="lightbox" href="images/thumbs/big/clouds-and-rainbow.jpg" title="Clouds &amp; Rainbow"><img src="images/thumbs/clouds-and-rainbow.jpg" alt="" /> </a>
-                    </div>
-                    <h3 class="entry-title">Clouds &amp; Rainbow</h3>
-                </li>
 
-                <li class="folio-thumb">
-                    <div class="thumb">
-                        <a class="lightbox" href="images/thumbs/big/landscape.jpg" title="Rural Landscape"><img src="images/thumbs/landscape.jpg" alt=""  /> </a>
-                    </div>
-                    <h3 class="entry-title">Rural Landscape</h3>
-                </li>
-
-                <li class="folio-thumb">
-                    <div class="thumb">
-                        <a class="lightbox" href="images/thumbs/big/sneakers.jpg" title="Cosmic Sneakers"><img src="images/thumbs/sneakers.jpg" alt="" /> </a>
-                    </div>
-                    <h3 class="entry-title">Cosmic Sneakers</h3>
-                </li>
-
-                 <li class="folio-thumb last">
-                    <div class="thumb">
-                        <a class="lightbox" href="images/thumbs/big/vector-flower-fullscreen.jpg" title="Abstract Vectors"><img src="images/thumbs/vector-flower-fullscreen.jpg" alt="" /> </a>
-                    </div>
-                    <h3 class="entry-title">Abstract Vector</h3>
-                </li>
-
+             
             </ul>
-
+          
             <a class="back-to-top" href="#main">Back to Top</a>
 
             
