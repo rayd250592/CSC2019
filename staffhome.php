@@ -132,10 +132,10 @@
         <ul class="footer-menu">
          
 
-            <li><a href="#services">Email Us</a></li>
-            <li><a href="#portfolio">Contacts</a></li>
-            <li><a href="#about-us">Legal</a></li>
-            <li><a href="#about-us">Accessibility</a></li>
+            <li><a href="http://www.qub.ac.uk/home/TheUniversity/GeneralServices/Quicklinks/EmailUs/">Email Us</a></li>
+            <li><a href="http://www.qub.ac.uk/home/TheUniversity/AboutQueens/KeyContacts/">Contacts</a></li>
+            <li><a href="http://www.qub.ac.uk/home/Legal">Legal</a></li>
+            <li><a href="http://www.qub.ac.uk/home/Accessibility/">Accessibility</a></li>
             <li><a href="http://www.qub.ac.uk">www.qub.ac.uk</a></li>
             <!-- <li class="rss-feed"><a href="#">RSS Feed</a></li> -->
         </ul>

@@ -76,25 +76,26 @@
             <h1>QOL Student Homepage</h1>
             
                 
+             
               <ul class="folio-list clearfix">
 
                 <li class="folio-thumb">
                     <div class="thumb">
-                        <a class="lightbox" href="images/thumbs/timetable.jpg" title="Timetable" ><img src="images/images/timetable.jpg" alt="" /> </a>
+                        <a class="lightbox" href="images/timetable.jpg" title="Timetable" ><img src="images/timetable.jpg" alt="" /> </a>
                     </div>
                     <h3 class="entry-title">Time Table</h3>
                 </li>
 
                 <li class="folio-thumb last">
                     <div class="thumb">
-                        <a class="lightbox" href="images/images/libary.jpg" title="Library"><img src="images/images/libary.jpg" alt="" /> </a>
+                        <a class="lightbox" href="images/library.jpg" title="Library"><img src="images/library.jpg" alt="" /> </a>
                     </div>
                     <h3 class="entry-title">Library</h3>
                 </li>
 
       <li class="folio-thumb last">
                     <div class="thumb">
-                        <a class="lightbox" href="images/images/outlook.jpg" title="Library"><img src="images/images/outlook.jpg" alt="" /> </a>
+                        <a class="lightbox" href="images/email.jpg" title="Library"><img src="images/email.jpg" alt="" /> </a>
                     </div>
                     <h3 class="entry-title">Email</h3>
                 </li>
@@ -102,14 +103,14 @@
                
                 <li class="folio-thumb">
                     <div class="thumb">
-                        <a class="lightbox" href="images/images/moduals.jpg" title="Modules" ><img src="images/images/moduals.jpg" alt="" /> </a>
+                        <a class="lightbox" href="images/modules.jpg" title="Modules" ><img src="images/modules.jpg" alt="" /> </a>
                     </div>
                     <h3 class="entry-title">Modules</h3>
                 </li>
                 
                  <li class="folio-thumb">
                     <div class="thumb">
-                        <a class="lightbox" href="images/images/chip_pin_logo.jpg" title="Smart Card" ><img src="images/images/chip_pin_logo.jpg" alt="" /> </a>
+                        <a class="lightbox" href="images/smart_card.jpg" title="Smart Card" ><img src="images/smart_card.jpg" alt="" /> </a>
                     </div>
                     <h3 class="entry-title">Smart Card</h3>
                 </li>
@@ -125,13 +126,10 @@
 
              
             </ul>
+
+
+
           
-            <a class="back-to-top" href="#main">Back to Top</a>
-
-            
-	        
-
-
       <!-- about us -->
       
       <!-- Styles -->
@@ -145,10 +143,10 @@
 <footer>
     <div class="footer-content">
         <ul class="footer-menu">
-             <li><a href="#services">Email Us</a></li>
-            <li><a href="#portfolio">Contacts</a></li>
-            <li><a href="#about-us">Legal</a></li>
-            <li><a href="#about-us">Accessibility</a></li>
+            <li><a href="http://www.qub.ac.uk/home/TheUniversity/GeneralServices/Quicklinks/EmailUs/">Email Us</a></li>
+            <li><a href="http://www.qub.ac.uk/home/TheUniversity/AboutQueens/KeyContacts/">Contacts</a></li>
+            <li><a href="http://www.qub.ac.uk/home/Legal">Legal</a></li>
+            <li><a href="http://www.qub.ac.uk/home/Accessibility/">Accessibility</a></li>
             <li><a href="http://www.qub.ac.uk">www.qub.ac.uk</a></li>
             <!-- <li class="rss-feed"><a href="#">RSS Feed</a></li> -->
         </ul>
