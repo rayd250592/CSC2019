@@ -84,7 +84,7 @@
 
       <li class="folio-thumb last">
                     <div class="thumb">
-                        <a class="lightbox" href="images/email.jpg" title="Library"><img src="images/email.jpg" alt="" /> </a>
+                        <a class="lightbox" href="https://qmail.qub.ac.uk/CookieAuth.dll?GetLogon?curl=Z2Fowa&reason=0&formdir=1" title="Library"><img src="images/email.jpg" alt="" /> </a>
                     </div>
                     <h3 class="entry-title">Email</h3>
                 </li>
@@ -107,7 +107,7 @@
 
  <li class="folio-thumb">
                     <div class="thumb">
-                        <a class="lightbox" href="images/images/qsis.jpg" title="Qsis" ><img src="images/images/qsis.jpg" alt="" /> </a>
+                        <a class="lightbox" href="https://qsis.qub.ac.uk/psp/cs91prd/?cmd=login&languageCd=ENG&" title="Qsis" ><img src="images/images/qsis.jpg" alt="" /> </a>
                     </div>
                     <h3 class="entry-title">Qsis</h3>
                 </li>
