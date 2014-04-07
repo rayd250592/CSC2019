@@ -1,3 +1,18 @@
+<?php
+
+session_start();
+
+if (!isset($_SESSION['csc2024_40043298']))
+
+{
+
+$URL = 'login.php';
+header ("Location: $URL");
+}
+
+?>
+
+
 <!DOCTYPE html>
 <!--[if IE 7 ]>    <html class="ie7 oldie"> <![endif]-->
 <!--[if IE 8 ]>    <html class="ie8 oldie"> <![endif]-->
@@ -45,9 +60,9 @@
 
         <nav>
             <ul>
-                <li><a href="#main">Home</a></li>
+                <li><a href="login.php">Home</a></li>
                 <li><a href="#portfolio">Change Password</a></li>
-                <li><a href="#services">Logout</a></li>
+                <li><a href="process_logout.php">Logout</a></li>
                 
               </ul>
         </nav>

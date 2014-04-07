@@ -83,7 +83,7 @@
 	        <p><label>Username: </label>
 	        <input type="text" name="user" required />
 	        </p>
-	        <p><label>Password:&nbsp; </label>
+	        <p><label>Password: </label>
 	        <input type="password" name="userpassword" required />
 	        </p>
 	        <input type="submit" value="login" id="gobutton" style="margin-left:125px" />

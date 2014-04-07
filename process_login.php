@@ -119,6 +119,7 @@ if ($uname == 'staff')
 
 {
 
+$_SESSION['csc2024_40043298'] = $uname;
  header('Location: staffhome.php');
 
 }
@@ -135,7 +136,9 @@ elseif ($uname != 'staff' || $uname != 'student')
 
 {
 
-echo "<p>Your password or username is incorrect, click <a href='login.php'>here</a> to try again.</p>";
+echo "<h1>Incorrect Password</h1>";
+
+echo "</br>Your password or username is incorrect, click <a href='login.php'>here</a> to try again.";
 
 }
 
@@ -150,7 +153,8 @@ echo "<p>Your password or username is incorrect, click <a href='login.php'>here<
      
       <!-- contact -->
       
-
+<h1>Incorrect Password</h1>
+</br>
 <p>Your password or username is incorrect, click <a href='login.php'>here</a> to try again.</p>
 
 <!-- footer -->
