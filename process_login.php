@@ -119,7 +119,7 @@ if ($uname == 'staff')
 
 {
 
-$_SESSION['csc2024_40043298'] = $uname;
+$_SESSION['csc2019_40043298'] = $uname;
  header('Location: staffhome.php');
 
 }
