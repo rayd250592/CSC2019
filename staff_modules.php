@@ -1,16 +1,3 @@
-<?php
-
-$modules = $_GET['Modules'];
-$number = $_GET['Questions'];
-
-echo $modules;
-echo $number;
-
-
-
-?>
-
-
 <!DOCTYPE html>
 <!--[if IE 7 ]>    <html class="ie7 oldie"> <![endif]-->
 <!--[if IE 8 ]>    <html class="ie8 oldie"> <![endif]-->
@@ -89,27 +76,63 @@ echo $number;
       <!-- portfolio -->
       <section id="portfolio">
 
-            <h1>Create Quiz</h1>
-           <form action="staffcreatequiz.php">
+            <h1>Modules</h1>
+            
+             <form action="staffcreatequiz.php">
+        
+            
+            <table style="width: 70%">
+				<tr>
+					<td>
+					
+					    
+            Select Module: <select name="Modules" style="width: 130px">
+				<option selected>Select a Module</option>
+				<option>CSC2001</option>
+				<option>CSC2002</option>
+				<option>CSC2003</option>
+				<option>CSC2004</option>
+			</select>
+					
+					 <br>
+            <br>
+
+
+
+
+         Enter Number of Questions in Test: <input name="Questions" type="text" id="q"/>	
+
+					
+					
+					</td>
+					
+					
+					
+					
+					
+					<td>
+					
+					
+					
+					
+					  <br>
+					  <br>
+					  <input id="gobutton" style="margin-left:125px" type="submit" value="Create Quiz">
+<br>
+<br>
+  					  &nbsp;</td>
+				</tr>
+			</table>
             
             
-            <?php
+          
+            
+            <br>
+            <br>
+         
+        
 
-$modules = $_GET['Modules'];
-$number = $_GET['Questions'];
-
-//echo $modules;
-//echo $number;
-
-for ($i = 1; $i <= $number; $i++) {
-    echo $i;
-    echo "<br>";
-    echo "<br>";
-}
-
-
-?>
-
+            
             
             </form>
             
