@@ -78,7 +78,7 @@
 
             <h1>Modules</h1>
             
-             <form action="staffcreatequiz.php">
+             <form name="create" action="staffcreatequiz.php" onsubmit="return validate()">
         
             
             <table style="width: 70%">
@@ -87,12 +87,13 @@
 					
 					    
             Select Module: <select name="Modules" style="width: 130px">
-				<option selected>Select a Module</option>
-				<option>CSC2001</option>
-				<option>CSC2002</option>
-				<option>CSC2003</option>
-				<option>CSC2004</option>
+				<option value="CSC2001">CSC2001</option>
+				<option value="CSC2002">CSC2002</option>
+				<option value="CSC2003">CSC2003</option>
+				<option value="CSC2004">CSC2004</option>
 			</select>
+			
+	
 					
 					 <br>
             <br>
@@ -101,6 +102,8 @@
 
 
          Enter Number of Questions in Test: <input name="Questions" type="text" id="q"/>	
+         <br>
+          Enter Number of options per question: <input name="options" type="text" id="q"/>	
 
 					
 					
@@ -132,7 +135,7 @@
          
         
 
-            
+ 
             
             </form>
             
@@ -168,3 +171,33 @@
 </body>
 </html>
 	
+           		<script type="application/javascript">
+			
+
+function validate()
+{
+ 
+var x=document.forms["create"]["Questions"].value;
+var y=document.forms["create"]["options"].value;
+
+
+
+
+if (x==null || x=="")
+  {
+  alert("Number of Questions must be filled out");
+  return false;
+  }
+
+
+if (y==null || y=="")
+  {
+  alert("Number of options must be filled out");
+  return false;
+  }
+
+
+}
+
+
+			</script>

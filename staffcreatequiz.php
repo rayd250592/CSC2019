@@ -2,6 +2,7 @@
 
 $modules = $_GET['Modules'];
 $number = $_GET['Questions'];
+$options = $_GET['options'];
 
 echo $modules;
 echo $number;
@@ -90,27 +91,48 @@ echo $number;
       <section id="portfolio">
 
             <h1>Create Quiz</h1>
-           <form action="staffcreatequiz.php">
+           <form action="staffprocessquiz.php">
             
             
             <?php
 
 $modules = $_GET['Modules'];
 $number = $_GET['Questions'];
+$options = $_GET['options'];
 
 //echo $modules;
 //echo $number;
 
 for ($i = 1; $i <= $number; $i++) {
-    echo $i;
+    echo $i . ":  ";
+    echo "<input name='Text$i' type='text'  size='100' />";
     echo "<br>";
     echo "<br>";
-}
+    
+    for ($j = 1; $j <= $options; $j++)
+    {
+    
+    echo "<input name='Radio$j' type='radio' />";
+     echo "<input name='Texta$j' type='text'  size='50' />";
+    echo "<br>";
+    echo "<br>";
+    
+    echo "<input name='numbers' type='hidden' value='$number' />";
+echo "<br>";
+echo "<input name='options' type='hidden' value='$options' />";
+echo "<br>";
+echo "<input name='options' type='hidden' value='$modules' />";
 
+
+    
+    
+    }
+  
+}
 
 ?>
 
-            
+    <input name="btnSubmit" type="submit" value="Submit" />
             </form>
             
 
