@@ -112,10 +112,12 @@ for ($i = 1; $i <= $number; $i++) {
     for ($j = 1; $j <= $options; $j++)
     {
     
-    echo "<input name='Radio$j' type='radio' />";
-     echo "<input name='Texta$j' type='text'  size='50' />";
+    echo "<input name='Radio$i$j' type='radio' />";
+     echo "<input name='Texta$i$j' type='text'  size='50' />";
     echo "<br>";
     echo "<br>";
+    
+    }
     
     echo "<input name='numbers' type='hidden' value='$number' />";
 echo "<br>";
@@ -126,7 +128,7 @@ echo "<input name='options' type='hidden' value='$modules' />";
 
     
     
-    }
+    
   
 }
 
