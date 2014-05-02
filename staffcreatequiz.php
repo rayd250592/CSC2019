@@ -123,7 +123,7 @@ for ($i = 1; $i <= $number; $i++) {
 echo "<br>";
 echo "<input name='options' type='hidden' value='$options' />";
 echo "<br>";
-echo "<input name='options' type='hidden' value='$modules' />";
+echo "<input name='modules' type='hidden' value='$modules' />";
 
 
     
