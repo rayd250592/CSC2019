@@ -112,8 +112,12 @@ for ($i = 1; $i <= $number; $i++) {
     for ($j = 1; $j <= $options; $j++)
     {
     
-    echo "<input name='Radio$i$j' type='radio' />";
+    echo "<input name='c$i$j' type='checkbox' />";
+    
+     echo "<input name='qstatus$i$j' type='text' value='Incorrect'/>";
+     
      echo "<input name='Texta$i$j' type='text'  size='50' />";
+     
     echo "<br>";
     echo "<br>";
     
