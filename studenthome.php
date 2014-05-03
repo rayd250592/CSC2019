@@ -118,7 +118,7 @@ header ("Location: $URL");
                
                 <li class="folio-thumb">
                     <div class="thumb">
-                        <a class="lightbox" href="images/modules.jpg" title="Modules" ><img src="images/modules.jpg" alt="" /> </a>
+                        <a class="lightbox" href="student_modules.php" title="Modules" ><img src="images/modules.jpg" alt="" /> </a>
                     </div>
                     <h3 class="entry-title">Modules</h3>
                 </li>

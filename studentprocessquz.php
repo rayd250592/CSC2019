@@ -10,7 +10,7 @@ echo "<br>";
 echo "<br>";
 echo "<br>";
 
-$q_insert = "INSERT INTO quiz(Quiz_ID, Module, no_of_questions, no_of_options) Values (NULL, '$modules','$numbers', '$options')";
+$q_insert = "INSERT INTO quiz(Quiz_ID, Module, no_of_questions, no_of_options) Values (NULL, '$modules'.'$numbers', '$options')";
 echo $q_insert;
 mysql_query($q_insert) or die(mysql_error());
 $lastid = mysql_insert_id();
