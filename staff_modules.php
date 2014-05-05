@@ -91,6 +91,7 @@
 				<option value="CSC2002">CSC2002</option>
 				<option value="CSC2003">CSC2003</option>
 				<option value="CSC2004">CSC2004</option>
+				<option value="CSC2005">CSC2005</option>
 			</select>
 			
 	

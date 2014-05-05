@@ -1,14 +1,10 @@
 <?php
 
-$modules = $_GET['Modules'];
-$number = $_GET['Questions'];
-$options = $_GET['options'];
+include 'connect.php'; 
+$isquiz = $_GET['quiz'];
+$module = $_GET['module'];
 
-echo $modules;
-echo $number;
-
-
-
+echo $isquiz;
 ?>
 
 
@@ -90,55 +86,89 @@ echo $number;
       <!-- portfolio -->
       <section id="portfolio">
 
-            <h1>Create Quiz</h1>
-           <form action="staffprocessquiz.php">
+            <h1>Modules</h1>
             
+                  <form name="create" action="staffhome.php" />
+        
             
-            <?php
-
-$modules = $_GET['Modules'];
-$number = $_GET['Questions'];
-$options = $_GET['options'];
-
-//echo $modules;
-//echo $number;
-
-for ($i = 1; $i <= $number; $i++) {
-    echo $i . ":  ";
-    echo "<input name='Text$i' type='text'  size='100' />";
-    echo "<br>";
-    echo "<br>";
-    
-    for ($j = 1; $j <= $options; $j++)
-    {
-    
-    echo "<input name='c$i$j' type='checkbox' />";
-    
-     echo "<input name='qstatus$i$j' type='hidden' value='Incorrect'/>";
-     
-     echo "<input name='Texta$i$j' type='text'  size='50' />";
-     
-    echo "<br>";
-    echo "<br>";
-    
-    }
-    
-    echo "<input name='numbers' type='hidden' value='$number' />";
-echo "<br>";
-echo "<input name='options' type='hidden' value='$options' />";
-echo "<br>";
-echo "<input name='modules' type='hidden' value='$modules' />";
+            <table style="width: 70%">
+				<tr>
+					<td>
+					
+					    
+          			<input name="mod" type="hidden" value="<?php echo $module ?>"/>
+	
+					
+					 <br>
+            <br>
 
 
-    
-    
-    
-  
+<?php
+//echo $isquiz;
+if ($isquiz = "no")
+
+{
+
+
+echo "Quiz Already created";
+echo "<input id='gobutton' style='margin-left:125px' type='submit' value='Back'>";
+
+
 }
+
+
+
+else
+
+
+{
+
+
+
+echo "No quiz for this module. Please contact your lecturer for more information";
+echo "<form name='back' action='student_modules.php'>";
+echo "<input id='gobutton' style='margin-left:125px' type='submit' value='Back'>";
+echo "</form>";
+
+
+}
+
 
 ?>
 
-    <input name="btnSubmit" type="submit" value="Submit" />
+
+					
+					
+					</td>
+					
+					
+					
+					
+					
+					<td>
+					
+					
+					
+					
+					  <br>
+					  <br>
+					
+<br>
+<br>
+  					  &nbsp;</td>
+				</tr>
+			</table>
+            
+            
+          
+            
+            <br>
+            <br>
+         
+        
+
+ 
+            
             </form>
             
 
@@ -173,3 +203,34 @@ echo "<input name='modules' type='hidden' value='$modules' />";
 </body>
 </html>
 	
+           		<script type="application/javascript">
+			
+
+function validate()
+{
+ 
+var x=document.forms["create"]["Questions"].value;
+var y=document.forms["create"]["options"].value;
+
+
+
+
+if (x==null || x=="")
+  {
+  alert("Number of Questions must be filled out");
+  return false;
+  }
+
+
+if (y==null || y=="")
+  {
+  alert("Number of options must be filled out");
+  return false;
+  }
+
+
+}
+
+
+
+			</script>

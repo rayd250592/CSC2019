@@ -19,12 +19,6 @@ $no_of_options = $row[2];
 
 
 
-$q_answer_query = "SELECT answer_id, Answer, QUESTION_ID, correct FROM `answer` WHERE QUESTION_ID IN (SELECT Question_ID FROM `questions` WHERE Quiz_ID = '$lastid')";
-$qanswer = mysql_query($q_answer_query);
-$row = mysql_fetch_row($qanswer);
-
-
-echo $q_answer_query;
 
 
 ?>
@@ -109,7 +103,7 @@ echo $q_answer_query;
       <section id="portfolio">
 
             <h1>Take Quiz</h1>
-           <form action="">
+           <form name="takequiz" action="processans.php" onsubmit="Validate()">
             
             
             <?php
@@ -119,23 +113,95 @@ echo $q_answer_query;
 $qid = mysql_query($q_question_query) or die (mysql_error());
 
 
+$q_answer_query = "SELECT answer_id, Answer, QUESTION_ID, correct FROM `answer` WHERE QUESTION_ID IN (SELECT Question_ID FROM `questions` WHERE Quiz_ID = '$lastid')";
+$qanswer = mysql_query($q_answer_query);
+
+//echo $qanswer_query;
+
+
+
+//echo $q_answer_query;
+
             
-            while ($row = mysql_fetch_array($qid))
+$countq = mysql_num_rows($qid);
+$counta = mysql_num_rows($qanswer);
+
+
+for ($j = 0; $j <= ($no_of_questions -1); $j++) 
 {
-     echo $row['Question'] . "<br/>";
-     echo "</br>";
-    
+
+$questid =  mysql_result($qid, $j, "Question_ID");
+$quest = mysql_result($qid, $j, "Question");
+echo $quest;
+echo "<br>";
+echo "<br>";
+
+
+//echo "Answer";
+
+for ($k = 0; $k <= ($no_of_questions -1); $k++) 
+{
+
+$q_get_answers = "SELECT `Answer`, `correct` FROM `answer` WHERE Question_ID = $questid";
+
+
+$qans = mysql_query($q_get_answers) or die (mysql_error());
+
+$questans = mysql_result($qans, $k, "Answer");
+$correct = mysql_result($qans, $k, "correct");
+
+echo "<input name='Answer$j$k' type='checkbox'  style='margin-left:10px'  />";
+echo $questans;
+//echo $correct;
+echo "<br>";
+echo "<br>";
+
+echo "<input name='checka$j$k' type='hidden'  style='margin-left:10px' value='$correct'  />";
+
+
+
 }
 
 
-			?>
+
+//echo mysql_result($qans, $i, "Answer");
+echo "<br>";
+echo "<br>";
+
+}
+
+
+
+echo "<input name='noq' type='hidden'  style='margin-left:10px' value='$no_of_questions'  />";
+echo "<input name='noo' type='hidden'  style='margin-left:10px' value='$no_of_options'  />";
+
+
+
+
+
+
+	
+	?>
 <br>
 <br>
     <input name="btnSubmit" type="submit" value="Submit" />
             </form>
             
 
-       
+       		<script type="application/javascript">
+
+	
+function validate()
+{
+ 
+alert("TEST");
+
+}
+
+
+
+</script>
+
 
       <!-- about us -->
       
@@ -162,6 +228,8 @@ $qid = mysql_query($q_question_query) or die (mysql_error());
     </div>
 
 	</footer>
+	
+
 
 </body>
 </html>
