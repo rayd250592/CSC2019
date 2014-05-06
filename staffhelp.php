@@ -48,6 +48,8 @@
 <li><a href="login.php">Home</a></li>
                 <li><a href="#portfolio">Change Password</a></li>
                 <li><a href="process_logout.php">Logout</a></li>
+                               <a href="staffhelp.php"><img src="images/help_logo.png" style="width:30px; height:30px;" /></a> 
+
             </ul>
         </nav>
 
@@ -66,6 +68,45 @@
       <section id="portfolio">
 
             <h1>Staff Help</h1>
+			<p>Once logged onto the system, you will be brought to the staff 
+			homepage.</p>
+			<p>&nbsp;</p>
+            <img src="images/staffhome.PNG" alt="" style="width:800px; height:500px;" />
+            
+            <br>
+            <br>
+            
+            To create a quiz, click on modules. Select a module and enter the number of questions and options for the test.
+            
+            <img src="images/staffmodules.PNG" alt="" style="width:800px; height:500px;" />
+            
+             
+            <br>
+            <br>
+
+You will then br brought to a page where you enter the details for the quiz. Please remember to place a tick against the answer which is correct.
+
+<img src="images/createquiz.PNG" alt="" style="width:800px; height:500px;" />
+            
+             
+            <br>
+            <br>
+            
+            Once you are happy hit submit button and you will be told that the quiz was created successfully.
+            
+            <img src="images/quizcreated.PNG" alt="" style="width:800px; height:500px;" />
+            
+             
+            <br>
+            <br>
+            
+
+
+
+
+
+
+            
             
             
       
@@ -82,6 +123,7 @@
 
 
 <!-- footer -->
+<footer>
 <div class="footer-content">
         <ul class="footer-menu">
          
@@ -96,7 +138,7 @@
 
         <p class="footer-text">Copyright 2014 Queens University Belfast. &nbsp;&nbsp;&nbsp; Template from <a href="http://www.styleshout.com/">Styleshout</a></p>
     </div>
-	
+	</footer>
 
 
 </body>

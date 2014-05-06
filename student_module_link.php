@@ -58,6 +58,8 @@ echo $isquiz;
                 <li><a href="login.php">Home</a></li>
                 <li><a href="#portfolio">Change Password</a></li>
                 <li><a href="process_logout.php">Logout</a></li>
+                   <a href="studenthelp.php"><img src="images/help_logo.png" style="width:30px; height:30px;" /></a> 
+
             </ul>
         </nav>
 
@@ -114,7 +116,7 @@ echo "<input id='gobutton' style='margin-left:125px' type='submit' value='Take Q
 
 
 
-else
+elseif ($isquiz == "no")
 
 
 {
@@ -122,7 +124,9 @@ else
 
 echo "No quiz for this module. Please contact your lecturer for more information";
 echo "<form name='back' action='student_modules.php'>";
-echo "<input id='gobutton' style='margin-left:125px' type='submit' value='Back'>";
+echo "<br>";
+echo "<br>";
+echo "<a href='student_modules.php'><input id='gobutton' style='margin-left:470px' type='button' value='Back'></a>";
 echo "</form>";
 }
 

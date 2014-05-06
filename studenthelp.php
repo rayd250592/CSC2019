@@ -48,6 +48,8 @@
              <li><a href="login.php">Home</a></li>
                 <li><a href="#portfolio">Change Password</a></li>
                 <li><a href="process_logout.php">Logout</a></li>
+                   <a href="studenthelp.php"><img src="images/help_logo.png" style="width:30px; height:30px;" /></a> 
+
             </ul>
         </nav>
 
@@ -68,7 +70,61 @@
             <h1>Student Help</h1>
       
        
-       
+       			<p>Once logged onto the system, you will be brought to the student 
+			homepage.</p>
+			
+			<p>&nbsp;</p>
+            <img src="images/studenthome.PNG" alt="" style="width:800px; height:500px;" />
+            
+            <br>
+            <br>
+
+To take a quiz, click on modules.
+
+<p>&nbsp;</p>
+            <img src="images/studentmodules.PNG" alt="" style="width:800px; height:500px;" />
+            
+            <br>
+            <br>
+            
+          If a quiz exists, you will be told that a quiz is available to take.
+          
+          <p>&nbsp;</p>
+            <img src="images/quizfound.PNG" alt="" style="width:800px; height:500px;" />
+            
+            <br>
+            <br>
+            
+            If a quiz is not found, you will be told that a quiz is not available.
+            
+             <p>&nbsp;</p>
+            <img src="images/noquiz.PNG" alt="" style="width:800px; height:500px;" />
+            
+            <br>
+            <br>
+
+If a quiz is available, you will be able to take it.
+
+ <p>&nbsp;</p>
+            <img src="images/quiz.PNG" alt="" style="width:800px; height:1100px;" />
+            
+            <br>
+            <br>
+            
+            
+            Once submitted, you will receive your score.
+            
+             <p>&nbsp;</p>
+            <img src="images/result.PNG" alt="" style="width:800px; height:500px;" />
+            
+            <br>
+            <br>
+
+
+          
+          
+
+
 
       <!-- about us -->
       
@@ -80,6 +136,7 @@
 
 
 <!-- footer -->
+<footer>
 <div class="footer-content">
         <ul class="footer-menu">
          
@@ -95,7 +152,7 @@
         <p class="footer-text">Copyright 2014 Queens University Belfast. &nbsp;&nbsp;&nbsp; Template from <a href="http://www.styleshout.com/">Styleshout</a></p>
     </div>
 	
-
+</footer>
 
 </body>
 </html>

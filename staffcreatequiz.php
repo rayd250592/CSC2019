@@ -62,6 +62,8 @@ echo $number;
 <li><a href="login.php">Home</a></li>
                 <li><a href="#portfolio">Change Password</a></li>
                 <li><a href="process_logout.php">Logout</a></li>
+                               <a href="staffhelp.php"><img src="images/help_logo.png" style="width:30px; height:30px;" /></a> 
+
             </ul>
         </nav>
 

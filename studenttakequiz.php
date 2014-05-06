@@ -45,12 +45,10 @@
 
         <nav>
             <ul>
-                <li><a href="#main">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Our Works</a></li>
-                <li><a href="#about-us">About Us</a></li>
-                <li><a href="#styles">Styles</a></li>
-                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="login.php">Home</a></li>
+                <li><a href="#portfolio">Change Password</a></li>
+                <li><a href="process_logout.php">Logout</a></li>
+                <a href="studenthelp.php"><img src="images/help_logo.png" style="width:30px; height:30px;" /></a> 
             </ul>
         </nav>
 
@@ -96,10 +94,10 @@
 <footer>
     <div class="footer-content">
         <ul class="footer-menu">
-            <li><a href="#main">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#about-us">About</a></li>
+          <li><a href="http://www.qub.ac.uk/home/TheUniversity/GeneralServices/Quicklinks/EmailUs/">Email Us</a></li>
+            <li><a href="http://www.qub.ac.uk/home/TheUniversity/AboutQueens/KeyContacts/">Contacts</a></li>
+            <li><a href="http://www.qub.ac.uk/home/Legal">Legal</a></li>
+            <li><a href="http://www.qub.ac.uk/home/Accessibility/">Accessibility</a></li>
             <li><a href="http://www.qub.ac.uk">www.qub.ac.uk</a></li>
             <!-- <li class="rss-feed"><a href="#">RSS Feed</a></li> -->
         </ul>
