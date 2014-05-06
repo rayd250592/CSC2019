@@ -1,29 +1,3 @@
-<?php
-
-include('connect.php');
-$module= $_GET['mod'];
-
-
-//echo $module;
-
-
-$query = "SELECT Quiz_ID, no_of_questions, no_of_options FROM `quiz` WHERE `Module` = '$module'";
-echo $query;
-$quiz_query = mysql_query($query);
-$row = mysql_fetch_row($quiz_query);
-$lastid = $row[0];
-$no_of_questions = $row[1];
-$no_of_options = $row[2];
-
-
-
-
-
-
-
-?>
-
-
 <!DOCTYPE html>
 <!--[if IE 7 ]>    <html class="ie7 oldie"> <![endif]-->
 <!--[if IE 8 ]>    <html class="ie8 oldie"> <![endif]-->
@@ -71,7 +45,8 @@ $no_of_options = $row[2];
 
         <nav>
             <ul>
-            <li><a href="login.php">Home</a></li>
+<li><a href="login.php">Home</a></li>
+           <li><a href="login.php">Home</a></li>
                 <li><a href="#portfolio">Change Password</a></li>
                 <li><a href="process_logout.php">Logout</a></li>
             </ul>
@@ -99,106 +74,18 @@ $no_of_options = $row[2];
       <!-- portfolio -->
       <section id="portfolio">
 
-            <h1>Take Quiz</h1>
-           <form name="takequiz" action="processans.php" onsubmit="Validate()">
+            <h1>Quiz Created</h1>
+           <form action="staffhome.php">
+            
+            <br>
+            <br>
+            <input name="btnSubmit" type="submit" value="Home" />
             
             
-            <?php
-            
-            $q_question_query = "SELECT Question_ID, Question FROM `questions` WHERE  QUIZ_ID = '$lastid'";
-//echo $q_question_query;
-$qid = mysql_query($q_question_query) or die (mysql_error());
-
-
-$q_answer_query = "SELECT answer_id, Answer, QUESTION_ID, correct FROM `answer` WHERE QUESTION_ID IN (SELECT Question_ID FROM `questions` WHERE Quiz_ID = '$lastid')";
-$qanswer = mysql_query($q_answer_query);
-
-//echo $qanswer_query;
-
-
-
-//echo $q_answer_query;
-
-            
-$countq = mysql_num_rows($qid);
-$counta = mysql_num_rows($qanswer);
-
-
-for ($j = 0; $j <= ($no_of_questions -1); $j++) 
-{
-
-$questid =  mysql_result($qid, $j, "Question_ID");
-$quest = mysql_result($qid, $j, "Question");
-echo $quest;
-echo "<br>";
-echo "<br>";
-
-
-//echo "Answer";
-
-for ($k = 0; $k <= ($no_of_questions -1); $k++) 
-{
-
-$q_get_answers = "SELECT `Answer`, `correct` FROM `answer` WHERE Question_ID = $questid";
-
-
-$qans = mysql_query($q_get_answers) or die (mysql_error());
-
-$questans = mysql_result($qans, $k, "Answer");
-$correct = mysql_result($qans, $k, "correct");
-
-echo "<input name='Answer$j$k' type='checkbox'  style='margin-left:10px'  />";
-echo $questans;
-//echo $correct;
-echo "<br>";
-echo "<br>";
-
-echo "<input name='checka$j$k' type='hidden'  style='margin-left:10px' value='$correct'  />";
-
-
-
-}
-
-
-
-//echo mysql_result($qans, $i, "Answer");
-echo "<br>";
-echo "<br>";
-
-}
-
-
-
-echo "<input name='noq' type='hidden'  style='margin-left:10px' value='$no_of_questions'  />";
-echo "<input name='noo' type='hidden'  style='margin-left:10px' value='$no_of_options'  />";
-
-
-
-
-
-
-	
-	?>
-<br>
-<br>
-    <input name="btnSubmit" type="submit" value="Submit" />
             </form>
             
 
-       		<script type="application/javascript">
-
-	
-function validate()
-{
- 
-alert("TEST");
-
-}
-
-
-
-</script>
-
+       
 
       <!-- about us -->
       
@@ -213,7 +100,8 @@ alert("TEST");
 <footer>
     <div class="footer-content">
         <ul class="footer-menu">
-          <li><a href="http://www.qub.ac.uk/home/TheUniversity/AboutQueens/KeyContacts/">Contacts</a></li>
+              <li><a href="http://www.qub.ac.uk/home/TheUniversity/GeneralServices/Quicklinks/EmailUs/">Email Us</a></li>
+            <li><a href="http://www.qub.ac.uk/home/TheUniversity/AboutQueens/KeyContacts/">Contacts</a></li>
             <li><a href="http://www.qub.ac.uk/home/Legal">Legal</a></li>
             <li><a href="http://www.qub.ac.uk/home/Accessibility/">Accessibility</a></li>
             <li><a href="http://www.qub.ac.uk">www.qub.ac.uk</a></li>
@@ -224,8 +112,6 @@ alert("TEST");
     </div>
 
 	</footer>
-	
-
 
 </body>
 </html>

@@ -93,6 +93,8 @@
 				<option value="CSC2002">CSC2002</option>
 				<option value="CSC2003">CSC2003</option>
 				<option value="CSC2004">CSC2004</option>
+				<option value="CSC2005">CSC2005</option>
+				<option value="CSC2006">CSC2006</option>
 			</select>
 			
 	
@@ -117,7 +119,7 @@
 					
 					  <br>
 					  <br>
-					  <input id="gobutton" style="margin-left:125px" type="submit" value="Take Quiz">
+					  <input id="gobutton" style="margin-right:340px" type="submit" value="Take Quiz">
 <br>
 <br>
   					  &nbsp;</td>

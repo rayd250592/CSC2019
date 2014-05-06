@@ -102,7 +102,7 @@
 
 
 
-         Enter Number of Questions in Test: <input name="Questions" type="text" id="q"/>	
+         Enter Number of Questions in Test: <input name="Questions" type="text" id="q" style="margin-left:23px"/>	
          <br>
           Enter Number of options per question: <input name="options" type="text" id="q"/>	
 

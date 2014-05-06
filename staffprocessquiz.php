@@ -133,4 +133,7 @@ mysql_query($q_answer_insert) or die(mysql_error());
 
 mysql_close();
 
+header( 'Location: quizcreated.php'	) ;
+
+
 ?>
